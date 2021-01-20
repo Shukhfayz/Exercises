@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.HomePage">
+        <methods>
+          <include name="initialize"/>
+          <include name="basePageNavigation"/>
+          <include name="validateAppNavBar"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.HomePage -->
+      <class name="tests.validateTitle">
+        <methods>
+          <include name="validateAppTitle"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.validateTitle -->
+      <class name="tests.RShLoginTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="Login"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.RShLoginTest -->
+      <class name="tests.validateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+          <include name="validateAppNavBar"/>
+        </methods>
+      </class> <!-- tests.validateNavigationBar -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
